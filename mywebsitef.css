@@ -668,6 +668,7 @@ header a,.abt-container a{
         justify-content: center;
         align-items: center;
         text-align: center;
+        flex-direction: column !important;
     }
     
     #my-img{
