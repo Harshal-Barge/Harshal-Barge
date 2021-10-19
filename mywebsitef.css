@@ -62,7 +62,7 @@ section{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: -70px;
+/*     margin-top: -70px; */
     height: calc(130vh);
     display: flex;
     justify-content: center;
@@ -165,7 +165,8 @@ header a,.abt-container a{
     transition: all 0.5s ease 0s;
 }
 .sticky{
-    position: sticky;
+    position: fixed;
+    width:100%;
     top: 0px;
 }
 .mb-nav{
@@ -297,6 +298,7 @@ header a,.abt-container a{
     display: flex;
     flex-wrap: wrap;
     margin-top: 10rem;
+    z-index:1;
 }
 .inner-container{
     display: flex;
@@ -429,6 +431,7 @@ header a,.abt-container a{
 
 #cert-cnt{
     background-color: var(--custom_grey);
+    z-index:1;
 }
 #cert{
     display: flex;
@@ -648,6 +651,10 @@ header a,.abt-container a{
         font-size: 30px;
         margin: 0;
         padding: 0;
+    }
+    section{
+        background-size: 55rem;
+        margin-top: -10rem;
     }
     .mid-text{
         width:15rem;
