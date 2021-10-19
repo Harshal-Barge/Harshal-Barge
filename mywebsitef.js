@@ -70,7 +70,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 var x=window.matchMedia('(max-width: 700px)')
 
-document.addEventListener('click',()=>{
+function navbarfun(){
+    
     if(list.style.display== 'none' && x.matches){
         list.style.display= 'flex';
         cntbut.style.display='block';
@@ -78,4 +79,4 @@ document.addEventListener('click',()=>{
         list.style.display= 'none';
         cntbut.style.display='none';
     }
-});
+}
